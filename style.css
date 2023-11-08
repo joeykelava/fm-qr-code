@@ -35,7 +35,7 @@ h1 {
   padding: var(--Card_padding);
   border-radius: var(--Card_radius);
   margin-bottom: 2rem;
-  max-width: 40ch;
+  max-width: 35ch;
   box-shadow: 10px 0px 20px rgba(0, 0, 100, .2)  ;
 }
 
