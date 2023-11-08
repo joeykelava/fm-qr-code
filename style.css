@@ -1,0 +1,85 @@
+:root {
+  /* Colours */
+  --White: hsl(0, 0%, 100%);
+  --Light_gray: hsl(212, 45%, 89%);
+  --Grayish_blue: hsl(220, 15%, 55%);
+  --Dark_blue: hsl(218, 44%, 22%);
+
+  /* Card */
+  --Card_radius: 2.2rem;
+  --Card_padding: 2rem;
+}
+
+body {
+  background-color: hsl(212, 45%, 89%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Outfit', sans-serif;
+  min-height: 100vh;
+  font-size: 15px;
+  color: var(--Grayish_blue)
+}
+
+h1 {
+  text-align: center;
+  color: var(--Dark_blue);
+  font-weight: 700;
+}
+
+.card {
+  background: var(--White);
+  text-align: center;
+  padding: var(--Card_padding);
+  border-radius: var(--Card_radius);
+  margin-bottom: 2rem;
+  max-width: 40ch;
+  box-shadow: 10px 0px 20px rgba(0, 0, 100, .2)  ;
+}
+
+img {
+  width: 100%;
+  border-radius: calc(var(--Card_radius) - var(--Card_padding))
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  font-weight: 800;
+  color: var(--Grayish_blue);
+}
+
+.card_button {
+width: 100%;
+font-size: 1rem;
+border: none;
+display: block;
+font-family: inherit;
+padding: 1rem 0rem;
+cursor: pointer;
+background: #3281F7;
+color: var(--White);
+text-decoration: none;
+transition: background 250ms ease-in-out;
+-webkit-appearance: none;
+-moz-appearance: none;
+border-radius: calc(var(--Card_radius) - var(--Card_padding));
+}
+
+.card_button:hover, .card_button:focus {
+  background: #266DDA;
+}
+
+.fa-solid {
+  display: inline-block;
+  padding-left: .5rem;
+  transition: transform 250ms ease-in-out;
+}
+
+.card_button:hover .fa-arrow-right {
+  transform: translateX(.3rem);
+}
