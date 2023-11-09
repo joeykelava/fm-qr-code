@@ -46,24 +46,18 @@ I've even gone ahead and created an additional section by adding a button, and t
 
 Couple things I've learned along the way:
 
-```html
 <button> tags need a javascript to direct user to a new page, and also need a 'cursor:pointer' in CSS. Unlike <a> tags where you only need a 'href="(web-address)"', button tags need a little more HTML and CSS love to style.
-
-For example:
+```html
 <button class="card_button" onclick="document.location='https://josipkelava.com/'">Find out more</button>
 ```
 
+Including variables helped with colours, radius and padding. One in particular is on the '.card' class:
 ```css
-Including variables helped with colours, radius and padding.
-
-One in particular is on the '.card' class:
 --Card_radius: 2.2rem;
 --Card_padding: 2rem;
 border-radius: calc(var(--Card_radius) - var(--Card_padding))
-
-This equation helped me create the padding of the image based on the padding of the card itself. This was to avoid that funky uneven border-radius effect when the inner radius looks bigger than the outer one.
 ```
-
+This equation helped me create the padding of the image based on the padding of the card itself. This was to avoid that funky uneven border-radius effect when the inner radius looks bigger than the outer one.
 
 ### Continued development
 
